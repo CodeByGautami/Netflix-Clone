@@ -1,0 +1,372 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+
+*{
+    padding:0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("Assets/Images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: max(1300px), 120vw;
+    /* make a responsive and resizable in various size like mobile or desktop */
+    height: 90vh;
+    position: relative;
+    
+
+}
+.main .box{
+    height: 90vh;
+    width: 100%;
+    opacity: 0.66;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    
+}
+
+nav{
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+    /* background-color: antiquewhite; */
+}
+nav img{
+    /* color: red; */
+    /* background-color: red; */
+    width: 112px;
+    height: 82px;
+    fill: red;
+    position: relative;
+    z-index: 10 ;
+
+}
+
+nav button{
+    position:relative;
+    z-index: 10;
+    /* make a popup effect which shows the buttons over the background image  */
+
+}
+.hero{
+    font-family: "Martel Sans", sans-serif;
+    height: 72%;
+    /* if parent class height was set then you are able to set the height in percentage */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    position: relative;
+    z-index: 10;
+    /* margin: 14px 22px 64px 22px; */
+    padding: 24px;
+    text-align: center;
+
+
+}
+
+.hero> :nth-child(1){
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 70px;
+    
+}
+
+.hero> :nth-child(2){
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hero> :nth-child(3){
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.hero :nth-child{
+    
+}
+
+
+.separation{
+    /* background-color: red;
+    height: 2px;
+    border-radius: 92px; */
+
+    background:black;
+    height: 100px;
+    border-top: 4px solid #ff0066;
+    border-radius: 100% 120% 100% 120%;
+    left: 0;
+    width: 100%;
+
+
+}
+
+.trans{
+    background-color:transparent;
+    background-clip: padding-box;
+    border: 1px solid gainsboro;
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btnred{
+background-color: red;
+color: white;
+padding: 0.75rem 1.5rem;
+border-radius: 8px;
+/* min-height: 3.5rem; */
+line-height: 1.5;
+
+width: 200px;
+position: relative;
+font-size: 22px;
+min-height: 16px;
+min-width: 16px;
+
+
+}
+
+
+.btnred-sm{
+background-color: red;
+color: white;
+padding: 0.25rem 1rem;
+border-radius: 0.25rem;
+
+}
+.main input{
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 322px;
+    padding: 1.5rem 1rem 0.5rem;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid gainsboro;
+    border-radius: 0.25rem;
+    min-height: 16px;
+    min-width: 16px;
+    color: white;
+
+}
+
+h2{
+    color: white;
+    margin-left: 220px;
+    margin: 52px 22px 22px 200px;
+
+}
+.slider-container{
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+position: relative;
+padding: 20px;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+    margin-left: 40px;
+    margin-right: 60px;
+
+}
+
+.movie{
+    position: relative;
+    min-width: 180px;
+    height: 270px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+}
+
+.number{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    -webkit-text-stroke: 2px white;
+}
+
+.nav-btn{
+    position: absolute;
+    top: 50%;
+    transform: translatY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+      border: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 8px;
+      
+}
+
+.left-btn {
+    left: 10px;
+  }
+
+  .right-btn {
+    right: 10px;
+  }
+
+
+  .join{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-left: 20px;
+    
+  }
+  .boxes{
+    width: 220px;
+    height: 310px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: hsla(240, 61%, 22%, 0.605);
+    border: 2px solid black;
+    margin: 2px;
+
+  }
+  
+  .join h3{
+    color: white;
+    /* padding: 21px 12px 52px 21px; */
+    margin-left: 20px;
+    margin-right: 12px;
+    margin-top: 22px;
+    font-size: 22px;
+    
+}
+
+.boxes .description{
+    color: white;
+    /* padding: 5px 12px 32px 22px; */
+    margin-left: 20px;
+    margin-right: 12px;
+    margin-top: 22px;
+}
+
+.bigbox{
+width: 922px;
+height: 590px;
+/* border:2px solid white; */
+margin-left: 180px;
+padding: 12px;
+
+}
+
+.questions{
+    width: 890px;
+    height: 80px;
+    background-color: rgb(54, 51, 51);
+    margin-top: 11px;
+    margin-left: 12px;
+    display: flex;  
+    justify-content: space-between;  
+    gap: 22px;
+
+}
+
+.questions:hover{
+    background-color: rgb(128, 124, 124);
+    cursor: pointer;
+}
+
+.questions p{
+
+    font-size: 26px;
+    margin: 12px;
+    padding:22px;
+    color: white;
+}
+
+.questions svg{
+    font-size: 36px;
+    margin: 12px;
+    padding:22px;
+    color: white;
+
+}
+
+.separation1{
+    width: 98vw;
+    height: 122px;
+    /* background-color: antiquewhite; */
+    margin: 2px;
+    margin-bottom: 42px;
+    display: flex;
+    /* align-items: center; */
+
+}
+
+.separation1  span{
+    color: white;
+    
+}
+
+.head{
+    width: 98vw;
+    height: 499px;
+
+}
+
+.head span{
+    
+    margin: 52px;
+    padding: 32px;
+    font-size: 18px;
+    color: rgb(188, 176, 176);
+}
+
+.one{
+    width: 222px;
+    height: 80px;
+    border: 2px solid white;
+    margin-left: 0;
+    
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    /* margin-left: 20px; */
+    margin-top: 50px;
+    
+
+}
