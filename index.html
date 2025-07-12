@@ -48,7 +48,7 @@
         <h2>Trending now </h2>
         <div class="slider-container">
 
-            <button class="nav-btn left" onclick="slide(-1)"></button>
+           <button class="arrow left" onclick="scrollLeft()">❮</button>
 
             <div class="slider">
                 <div class="movie"><img src="Assets/Images/movie1.webp" alt="">
@@ -63,16 +63,17 @@
                 <div class="movie"><img src="Assets/Images/Movie4.webp" alt="">
                     <div class="number"> 4 </div>
                 </div>
-                <!-- <div class="movie"><img src="Assets/Images/Movie5.webp" alt="">
-        <div class="number">  5</div>
-    </div> -->
-                <!-- <div class="movie"><img src="Assets/Images/Movie6.webp" alt="">
-        <div class="number">  6</div>
-    </div> -->
+                <div class="movie"><img src="Assets/Images/Movie5.webp" alt="">
+                    <div class="number"> 5</div>
+                </div>
+                <div class="movie"><img src="Assets/Images/Movie6.webp" alt="">
+                    <div class="number"> 6</div>
+                </div>
 
             </div>
 
-            <button class="nav-btn right" onclick="slide(1)"></button>
+               <button class="arrow right" onclick="scrollRight()">❯</button>
+
 
         </div>
 
@@ -170,41 +171,57 @@
         </section>
 
         <section>
-            <div class="separation1">
-               <div> <span>Ready to watch? Enter your email to create or restart your membership.</span>
-               </div>
-
-                <div>
-                    <input type="text" placeholder="Email Address">
-
-                    <button class="btn btnred ">Get Started >
-
-                    </button>
+            <div class="cta-container">
+                <p class="cta-text">Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="cta-form">
+                    <input type="text" placeholder="Email Address" class="cta-input">
+                    <button class="btn btnred">Get Started ></button>
                 </div>
             </div>
+        </section>
 
-            <footer>
-                <div class="head">
-                    <span>Quetions? Call 000-800-919-1743 </span>
+        <footer>
+            <div class="footer-container">
+                <p>Questions? Call <a href="tel:000-800-919-1694">000-800-919-1694</a></p>
 
-                    <div class="foot">
-                        <div class="one">
-                            <span>FAQ</span>
-                            <span>Investor Relations</span>
-                        </div>
-                        <div class="one"></div>
-                        <div class="one"></div>
-                        <div class="one"></div>
-
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <a href="#">FAQ</a>
+                        <a href="#">Investor Relations</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Speed Test</a>
                     </div>
-
+                    <div class="footer-column">
+                        <a href="#">Help Centre</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">Cookie Preferences</a>
+                        <a href="#">Legal Notices</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#">Account</a>
+                        <a href="#">Ways to Watch</a>
+                        <a href="#">Corporate Information</a>
+                        <a href="#">Only on Netflix</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#">Media Centre</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Contact Us</a>
+                    </div>
                 </div>
 
+                <div class="language-select">
+                    <button class="btn trans">English</button>
+                </div>
 
-            </footer>
+                <p class="netflix-india">Netflix India</p>
+            </div>
+        </footer>
 
 
-        </section>
+
+
+
 
 
 
